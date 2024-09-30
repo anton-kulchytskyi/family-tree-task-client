@@ -5,7 +5,6 @@ const App = () => {
   const [photos, setPhotos] = useState([]);
   useEffect(() => {
     fetch('https://family-tree-task-server.onrender.com/familymembers', {
-      method: 'POST',
       headers: {
         'Content-Type': 'application/json',
         'Access-Control-Allow-Origin': '*',
