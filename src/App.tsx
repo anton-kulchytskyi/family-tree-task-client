@@ -4,9 +4,15 @@ import * as styles from '../src/styles/App.module.css';
 const App = () => {
   const [photos, setPhotos] = useState([]);
   useEffect(() => {
-    // fetch('https://family-tree-task-server.onrender.com/familymembers')
-    fetch('http://localhost:3000/familymembers')
+    fetch('https://family-tree-task-server.onrender.com/familymembers', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+      // fetch('http://localhost:3000/familymembers')
       .then((res) => {
+        console.log(res);
         return res.json();
       })
       .then((data) => {
