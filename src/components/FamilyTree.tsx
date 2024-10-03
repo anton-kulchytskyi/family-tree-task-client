@@ -9,20 +9,19 @@ const FamilyTree = () => {
 
   useEffect(() => {
     fetchRootMember('root').then((res) => {
-      console.log(res, 'app');
       setRoot(res);
     });
   }, []);
 
   return (
-    <>
+    <div className="tree">
       {root.map((member) => (
         <FamilyMember
           key={member._id}
           member={member}
         />
       ))}
-    </>
+    </div>
   );
 };
 

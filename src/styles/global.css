@@ -2,21 +2,70 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
-.center {
+button {
+  background: transparent;
+  border: none;
+}
+
+input {
+  margin-bottom: 0.5rem;
+}
+
+.wrapper {
+  padding: 1rem 2rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tree {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
-h1 {
-  color: #ff0000;
+.member-name {
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.child {
+  padding-left: 2rem;
 }
 
 .shrunk {
   display: none;
+}
+
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+
+  background-color: #13101092;
+  color: #f5f5dc;
+}
+
+.modal-content {
+  padding: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.anwer-button,
+.submit-button {
+  margin: 0.5rem;
 }
