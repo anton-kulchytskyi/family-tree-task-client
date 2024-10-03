@@ -3,9 +3,6 @@ import { IFamilyMember } from '../interfaces/FamilyMember';
 // const apiUrl = 'http://localhost:3000/familymembers';
 const apiUrl = process.env.API_URL;
 
-console.log(process.env.API_URL);
-console.log(apiUrl);
-
 type RequestMethod = 'GET' | 'POST' | 'PUT' | 'DELETE';
 
 const fetchData = async (
