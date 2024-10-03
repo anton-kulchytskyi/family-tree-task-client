@@ -2,7 +2,7 @@
 
 You can create you family tree
 
-[LIVE-DEMO][https://family-tree-task-client.vercel.app/]
+[LIVE-DEMO](https://family-tree-task-client.vercel.app/)
 
 ## Stack
 
@@ -21,4 +21,4 @@ You can create you family tree
 
 ## Server
 
-[Server][https://github.com/anton-kulchytskyi/family-tree-task-server]
+[Server](https://github.com/anton-kulchytskyi/family-tree-task-server)
